@@ -2,6 +2,7 @@
   "name": "webgame",
   "private": true,
   "type": "module",
+  "homepage": "https://kuma003.github.io/WebGame/",
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",

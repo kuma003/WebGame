@@ -64,6 +64,16 @@ The containerized application can be deployed to any platform that supports Dock
 - Fly.io
 - Railway
 
+### GitHub Pages
+
+1. Set the base path environment variable to match your repository name so assets resolve correctly:
+
+	```bash
+	PUBLIC_BASE_PATH=/WebGame npm run build
+	```
+
+2. Deploy the contents of `build/client` to the `gh-pages` branch (or rely on the provided GitHub Actions workflow which already performs these steps, including copying `index.html` to `404.html` for SPA routing).
+
 ### DIY Deployment
 
 If you're familiar with deploying Node applications, the built-in app server is production-ready.
