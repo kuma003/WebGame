@@ -24,7 +24,7 @@ jobs:
           node-version: "24"
 
       - name: Install dependencies
-        working-directory: ./frontend
+        working-directory: .
         run: |
           rm -rf node_modules package-lock.json
           npm install
@@ -47,7 +47,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./frontend/build/client"
+          path: "./build/client"
 
       - name: Deploy to GitHub Pages
         id: deployment
